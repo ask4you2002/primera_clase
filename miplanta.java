@@ -19,32 +19,32 @@ public class miplanta{
 	}
 
 	public boolean getHidratacion(){
-		return hidratación;
+		return estaHidratada;
 	}
 
-	public setTipoDePLanta(String tipoDePLanta){
-		this.tipoDePLanta = tipoDePLanta;
+	public void setTipoDePLanta(String tipoDePLanta){
+		this.tipoDePLanta = "tipoDePlanta";
 	}
 
-	public echarAbono(int cantidadDeAbono){
+	public void echarAbono(int cantidadDeAbono){
 		numeroDeHojas = numeroDeHojas + cantidadDeAbono;
 	}
 
-	public sethidratacion (){
-		if(hidratación == true){
-			hidratación = false;
+	public void sethidratacion (){
+		if(estaHidratada == true){
+			estaHidratada = false;
 		}
 		else {
-			hidratacion = true;
+			estaHidratada = true;
 		}
 	}
 
 	public void estado(){
-		System.out.println("La planta es,"+ tipoDePLanta + ",con" +numeroDeHojas+ ", hidratada" +hidratacion+)
+		System.out.println("La planta es "+ tipoDePLanta + ",con" + numeroDeHojas + " con, hidratada: " + estaHidratada );
 	}
 
-	public String estado(){
-		estado = "La planta es,"+ tipoDePLanta + ",con" +numeroDeHojas+ ", hidratada" +hidratacion+;
-		return estado;
+	public String mensaje(){
+		String mensaje = "La planta es "+ tipoDePLanta + " ,con " +numeroDeHojas+ " hojas, hidratada: " + estaHidratada ;
+		return mensaje;
 	}
 } 
