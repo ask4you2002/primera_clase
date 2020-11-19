@@ -7,7 +7,7 @@ public class MiPlanta{
 	public MiPlanta(int numeroDeHojas, boolean hidratacion){
 		numeroDeHojas = 0;
 		hidratacion = false;
-		tipoDePlanta = "Geranio";
+		tipoDePlanta = "";
 	}
 
 	public String getTipoDePlanta(){
@@ -23,7 +23,7 @@ public class MiPlanta{
 	}
 
 	public void setTipoDePLanta(String tipoDePlanta){
-		tipoDePlanta = tipoDePlanta;
+		this.tipoDePlanta = tipoDePlanta;
 	}
 
 	public void echarAbono(int cantidadDeAbono){
