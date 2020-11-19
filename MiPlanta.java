@@ -22,8 +22,8 @@ public class MiPlanta{
 		return estaHidratada;
 	}
 
-	public void setTipoDePLanta(String tipoDePlanta){
-		this.tipoDePlanta = tipoDePlanta;
+	public void setTipoDePLanta(String tipoDePlantaNuevo){
+		tipoDePlanta = tipoDePlantaNuevo;
 	}
 
 	public void echarAbono(int cantidadDeAbono){
